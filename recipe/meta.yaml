@@ -1,6 +1,6 @@
 {% set name = "reentry" %}
-{% set version = "1.0.2"%}
-{% set sha256 = "0fe68f19c7623d500ae0c1ca4e98d627f4d1d9832ae8bb4b00e4e471a5fdcd97"%}
+{% set version = "1.0.3"%}
+{% set sha256 = "6edae349403b156641b70ef63cb6aacb17bf6ce0a00ef9a31eb27da2701b9d1d"%}
 
 package:
   name: {{ name|lower }}
@@ -41,8 +41,7 @@ about:
   home: https://github.com/DropD/reentry
   license: MIT
   license_family: MIT
-  # PR for including license file: https://github.com/DropD/reentry/pull/10
-  #license_file: LICENSE
+  license_file: LICENSE
   summary: 'A plugin manager based on setuptools entry points mechanism'
   dev_url: https://github.com/DropD/reentry
 
