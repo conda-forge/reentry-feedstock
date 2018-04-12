@@ -1,14 +1,14 @@
 {% set name = "reentry" %}
-{% set version = "1.0.2"%}
-{% set sha256 = "0fe68f19c7623d500ae0c1ca4e98d627f4d1d9832ae8bb4b00e4e471a5fdcd97"%}
+{% set version = "1.1.0"%}
+{% set sha256 = "8c234a14d74715b0ed2cc905ca0b3ecfa9af3844cc2f7843a47f2bb681d03716"%}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: v{{ version }}.tar.gz
-  url: https://github.com/DropD/reentry/archive/v{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
