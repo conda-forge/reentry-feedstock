@@ -34,15 +34,11 @@ test:
     - python -m pytest
   requires:
     - packaging
-    - tox
     - pytest-cov
     - coverage
-    - yapf
     - pytest
     - flake8
     - pylint
-    - prospector
-    - pre-commit
   source_files:
     - reentry
 
