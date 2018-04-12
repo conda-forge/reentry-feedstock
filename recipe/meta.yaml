@@ -33,7 +33,7 @@ test:
     - reentry --help
     - python -m pytest
   requires:
-    - pytest
+    - reentry[dev]
   source_files:
     - reentry
 
@@ -41,8 +41,7 @@ about:
   home: https://github.com/DropD/reentry
   license: MIT
   license_family: MIT
-  # PR for including license file: https://github.com/DropD/reentry/pull/10
-  #license_file: LICENSE
+  license_file: LICENSE
   summary: 'A plugin manager based on setuptools entry points mechanism'
   dev_url: https://github.com/DropD/reentry
 
