@@ -33,7 +33,16 @@ test:
     - reentry --help
     - python -m pytest
   requires:
-    - reentry[dev]
+    - packaging
+    - tox
+    - pytest-cov
+    - coverage
+    - yapf
+    - pytest
+    - flake8
+    - pylint
+    - prospector
+    - pre-commit
   source_files:
     - reentry
 
