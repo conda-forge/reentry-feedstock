@@ -31,7 +31,6 @@ test:
     - reentry
   commands:
     - reentry --help
-    - python -m pytest
   requires:
     - packaging
     - pytest-cov
