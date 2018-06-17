@@ -1,6 +1,6 @@
 {% set name = "reentry" %}
-{% set version = "1.1.0"%}
-{% set sha256 = "8c234a14d74715b0ed2cc905ca0b3ecfa9af3844cc2f7843a47f2bb681d03716"%}
+{% set version = "1.2.1" %}
+{% set sha256 = "bde45202b6781e5fc1acfe837e9142f17da69140ff62f327159407f6c7d8a542" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,6 @@ test:
     - reentry
   commands:
     - reentry --help
-    - python -m pytest
   requires:
     - packaging
     - pytest-cov
