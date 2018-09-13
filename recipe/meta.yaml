@@ -35,14 +35,7 @@ test:
     - reentry
   commands:
     - reentry --help
-    - python -m pytest
-  requires:
-    - packaging
-    - pytest-cov
-    - coverage
-    - pytest
-    - flake8
-    - pylint
+    - reentry scan
   source_files:
     - reentry
 
