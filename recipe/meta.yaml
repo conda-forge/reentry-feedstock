@@ -1,6 +1,6 @@
 {% set name = "reentry" %}
-{% set version = "1.1.1"%}
-{% set sha256 = "70924e8fbbbab75a823ce8d01c88773a1be30596e385370b85c25cd1f9c71d97"%}
+{% set version = "1.1.1" %}
+{% set sha256 = "70924e8fbbbab75a823ce8d01c88773a1be30596e385370b85c25cd1f9c71d97" %}
 
 package:
   name: {{ name|lower }}
