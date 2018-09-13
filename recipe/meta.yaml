@@ -21,7 +21,7 @@ build:
 requirements:
   build:
     - python
-    - setuptools >=18.5
+    - pip
 
   host:
     - pip
