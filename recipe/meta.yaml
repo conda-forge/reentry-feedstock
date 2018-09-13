@@ -15,17 +15,13 @@ build:
   number: 0
   entry_points:
     - reentry = reentry.cli:reentry
-  script: "python -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [not py27]
 
 requirements:
-  build:
+  host:
     - python
     - pip
-
-  host:
-    - pip
-
   run:
     - python
     - click
