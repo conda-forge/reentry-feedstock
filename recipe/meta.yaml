@@ -1,6 +1,6 @@
 {% set name = "reentry" %}
-{% set version = "1.1.0"%}
-{% set sha256 = "8c234a14d74715b0ed2cc905ca0b3ecfa9af3844cc2f7843a47f2bb681d03716"%}
+{% set version = "1.1.1"%}
+{% set sha256 = "70924e8fbbbab75a823ce8d01c88773a1be30596e385370b85c25cd1f9c71d97"%}
 
 package:
   name: {{ name|lower }}
@@ -15,13 +15,17 @@ build:
   number: 0
   entry_points:
     - reentry = reentry.cli:reentry
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [not py27]
 
 requirements:
   build:
     - python
     - setuptools >=18.5
+
+  host:
+    - pip
+
   run:
     - python
     - click
