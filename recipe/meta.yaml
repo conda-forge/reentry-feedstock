@@ -31,9 +31,6 @@ requirements:
 test:
   imports:
     - reentry
-  commands:
-    - reentry --help
-    - reentry scan
   source_files:
     - reentry
 
