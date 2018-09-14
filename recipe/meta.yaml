@@ -25,6 +25,8 @@ requirements:
   run:
     - python
     - click
+    - six
+    - py
 
 test:
   imports:
