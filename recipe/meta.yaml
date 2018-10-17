@@ -1,14 +1,14 @@
 {% set name = "reentry" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "e8b8f250f5dd07a90a5bfa7b0bb854f34c70a8a96ce9b61a55957739a5561e59" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "9c8378965336a1e88b686f0163484dbe5e47815a15ff8a12844d7173877dc6e3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/DropD/reentry/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -16,7 +16,6 @@ build:
   entry_points:
     - reentry = reentry.cli:reentry
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [not py27]
 
 requirements:
   host:
@@ -45,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - ltalirz
+    - DropD
