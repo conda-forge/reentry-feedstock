@@ -25,7 +25,7 @@ requirements:
     - python
     - click
     - six
-    - py
+    - pathlib2  # [py < 35]
 
 test:
   imports:
