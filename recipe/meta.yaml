@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - reentry = reentry.cli:reentry
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
@@ -45,3 +45,4 @@ extra:
   recipe-maintainers:
     - ltalirz
     - DropD
+    - chrisjsewell
